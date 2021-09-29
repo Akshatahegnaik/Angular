@@ -1,0 +1,92 @@
+<div class="parent">
+<ul class="heroes">
+  <li *ngFor="let hero of heroes"
+    [class.selected]="hero === selectedHeros"
+    (click)="onSelect(hero)">
+    <span class="badge"> {{hero.id}} </span> {{hero.name}}
+  </li>
+</ul>
+<div *ngIf="selectedHeros" class="Axy" >
+    <h3>User Details</h3>
+   
+    <span>Id : </span>{{selectedHeros.id}}
+    <br>
+    <span>Name : </span>{{selectedHeros.name}}
+    <br>
+    <span>Username : </span>{{selectedHeros.username}}
+    <br>
+    <span>Email : </span>{{selectedHeros.email}}
+    <br>
+    <span>Address : </span>{{selectedHeros.address.street}},{{selectedHeros.address.suite}},{{selectedHeros.address.city}},{{selectedHeros.address.zipcode}},{{selectedHeros.address.geo.lat}},{{selectedHeros.address.geo.lng}}
+    <br>
+    <span>Phone : </span>{{selectedHeros.phone}}
+    <br>
+    <span> Website : </span>{{selectedHeros.website}}
+    <br>
+    <span>Company : </span> {{selectedHeros.company.name}},{{selectedHeros.company.catchPhrase}} ,{{selectedHeros.company.bs}}
+    
+    
+    
+
+  
+</div>
+</div>    
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+    <!--<table class="table">
+      <thead>
+        <tr>
+          <th>id</th>
+          <th>Name</th>
+          <th>Username</th>
+          </tr> 
+      </thead>
+      <tbody>
+        <tr *ngFor="let user of users">
+          <td (click)="toggle()">{{user.id}}</td>
+          <td>{{user.name}}</td>
+          <td>{{user.username}}</td>
+          <div *ngIf="!details">
+          <tr>   
+            <th>Email</th>
+            <th>Address</th>
+            <th>Phone</th>
+            <th>Website</th>
+            <th>Company</th>    
+         </tr>  
+          <td>{{user.email}}</td>
+          <td>{{user.address.street}}, {{user.address.suite}}, {{user.address.city}},{{user.address.zipcode}},{{user.address.geo.lat}},{{user.address.geo.lng}}</td>
+          <td>{{user.phone}}</td>
+          <td>{{user.website}}</td>
+          <td>{{user.company.name}},{{user.company.catchPhrase}} ,{{user.company.bs}}</td>
+          </div>  
+        </tr>
+        
+      </tbody>
+    </table>
+  </div>-->
+  
+  
+  
+  
+

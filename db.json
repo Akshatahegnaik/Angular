@@ -1,0 +1,50 @@
+{
+  "productList": [
+    {
+      "productName": "Grapes1",
+      "category": "Fruits",
+      "freshness": "Brand-New",
+      "price": 888,
+      "comment": "I like all fruits",
+      "date": "2023-08-03T18:30:00.000Z",
+      "id": 1
+    },
+    {
+      "productName": "akshata",
+      "category": "Vegetables",
+      "freshness": "Brand-New",
+      "price": 1e+29,
+      "comment": "Love yourself",
+      "date": "2023-08-22T18:30:00.000Z",
+      "id": 2
+    },
+    {
+      "productName": "Akshata",
+      "category": "Vegetables",
+      "freshness": "Brand-New",
+      "price": 1222,
+      "comment": "Hey",
+      "date": "2023-08-16T18:30:00.000Z",
+      "id": 3
+    },
+    {
+      "productName": "kiran",
+      "category": "Vegetables",
+      "gender": "female",
+      "price": 12233,
+      "comment": "mxncbjsd",
+      "date": "2023-08-16T18:30:00.000Z",
+      "id": 4
+    }
+  ],
+  "comments": [
+    {
+      "id": 1,
+      "body": "some comment",
+      "postId": 1
+    }
+  ],
+  "profile": {
+    "name": "typicode"
+  }
+}

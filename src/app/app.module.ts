@@ -20,14 +20,21 @@ import { HttpClientModule } from '@angular/common/http';
 import {MatTableModule} from '@angular/material/table';
 import {MatPaginatorModule} from '@angular/material/paginator'
 import { MatSortModule } from '@angular/material/sort';
+import {MatCardModule} from '@angular/material/card';
 import { GenderPrefixPipe } from './gender-prefix.pipe';
+import { LoginComponent } from './login/login.component';
+import { SignupComponent } from './signup/signup.component';
+import { ProductsComponent } from './products/products.component';
 
 
 @NgModule({
   declarations: [
     AppComponent,
     DialogComponent,
-    GenderPrefixPipe
+    GenderPrefixPipe,
+    LoginComponent,
+    SignupComponent,
+    ProductsComponent
   ],
   imports: [
     BrowserModule,
@@ -48,7 +55,9 @@ import { GenderPrefixPipe } from './gender-prefix.pipe';
     HttpClientModule,
     MatTableModule,
     MatPaginatorModule,
-    MatSortModule
+    MatSortModule,
+    MatCardModule
+
   ],
   providers: [],
   bootstrap: [AppComponent]

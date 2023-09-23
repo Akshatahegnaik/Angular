@@ -20,7 +20,7 @@
             <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
             <mat-datepicker #picker></mat-datepicker>
         </mat-form-field>
-          <label><h1>Product gender</h1></label>
+          <label>Gender</label>
           <mat-radio-group  formControlName="gender" class="example-radio-group">
             <mat-radio-button  class="example-radio-button" *ngFor="let fresh of gender" [value]="fresh">
                 {{fresh}}

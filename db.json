@@ -46,5 +46,17 @@
   ],
   "profile": {
     "name": "typicode"
-  }
+  },
+  "signupUsers": [
+    {
+      "email": "jgn",
+      "password": "hgfdgh",
+      "id": 1
+    },
+    {
+      "email": "jgnhhh",
+      "password": "hgfdgh",
+      "id": 2
+    }
+  ]
 }

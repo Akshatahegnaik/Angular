@@ -24,4 +24,18 @@ export class ApiService {
   deleteProduct(id:number){
     return this.http.delete<any>("http://localhost:3000/productList/"+id)
   }
+
+
+
+  // login(email: string, password: string) {
+  //   return this.http.get(`${this.apiUrl}/signupUsers?email=${email}&password=${password}`);
+  // }
+
+  login(){
+    return this.http.get<any>("http://localhost:3000/signupUsers")
+  }
+
+  signup(data:any){
+    return this.http.post<any>("http://localhost:3000/signupUsers",data)
+  }
 }
